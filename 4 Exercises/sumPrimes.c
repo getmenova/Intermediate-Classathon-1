@@ -29,6 +29,20 @@ int sumPrimes(int number) //if prime, sum it!
 }
 
 int main(void)
+{
+  printf("%s\n", "Enter (n) to make it go: ");
+  int n = get_int();
+  printf("%i\n", sumPrimes(n));
+  return 0;
+}
+
+
+
+
+
+
+
+/*int main(void)
 
 {
 
@@ -44,4 +58,4 @@ int main(void)
     }
 }
 
-//one additional process
+//one additional process*/
