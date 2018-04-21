@@ -8,9 +8,12 @@ int main(void)
     safer_gets(str, sizeof(str));
     printf("Enter what you are searching for: ");
     safer_gets(substr, sizeof(str));
-    (findSubstring(str, substr));
-    //printf("Your result: %d\n", findSubstring(str, substr)); adding 0 and 1
-    return 0;
+
+    printf("Your return value (n) is %d\n", findSubstring(str, substr)); // adding 0 and 1
+
+    int result = (findSubstring(str, substr)); // support return statement 0 and 1
+    if (result == 1) return 1;
+    if (result == 0) return 0;
 }
 
 int findSubstring(char *str, char *substr)
@@ -27,11 +30,16 @@ int findSubstring(char *str, char *substr)
         }
     }
     if (*(substr + i) == '\0')
-        return printf(" 1 - Target acquired!");
+         {
+            printf("These are the strings we're looking for...");
+            return 1;
+        }
         //SSprintf("Target acquired!");
     else
-        return printf("0 - These aren't the strings we're looking for...");
-
+        {
+            printf("These aren't the strings we're looking for...");
+            return 0;
+        }
      /*                              /~\
                                     |o o)      Please try again!
                                     _\=/_
