@@ -55,7 +55,7 @@ int findSubstring(char *str, char *substr)
 ________________[_]_[_]_[_]________/_]_[_\_________________________
         //printf("These are not the strings you're looking for...");*/
 }
-void safer_gets(char *str, size_t max) // gets function vulnerable to bufer overrun, removed from library
+void safer_gets(char *str, size_t max) // gets function vulnerable to buffer overrun, removed from library
 {
     int i;
     fgets(str, max, stdin);
@@ -70,7 +70,7 @@ void safer_gets(char *str, size_t max) // gets function vulnerable to bufer over
 
 
 
-// redo - and use strstr from the library
+// redo this one using strstr from the library in the real world.
 
 
 
