@@ -3,7 +3,7 @@ int findSubstring(char *str, char *substring);
 void safer_gets(char *str, size_t max);
 int main(void)
 {
-    char str[140], substr[140]; // create space the size of a tweet
+    char str[141], substr[141]; // create space the size of a tweet
     printf("Enter the complete string: ");
     safer_gets(str, sizeof(str));
     printf("Enter what you are searching for: ");
