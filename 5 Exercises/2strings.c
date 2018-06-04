@@ -16,11 +16,12 @@ int main(void)
     if (result == 0) return 0;
 }
 
+
 int findSubstring(char *str, char *substr)
 {
     int i = 0, j = 0;
-    while ((*(str + j) != '\0')&&(*(substr + i) != '\0')) {
-        if (*(substr + i) != *(str + j)) {
+    while (_&&(*(substr + i) != '\0')) {
+        if (*(substr + (*(str + j) != '\0')) != *(str + j)) {
             j++;
             i = 0;
         }
